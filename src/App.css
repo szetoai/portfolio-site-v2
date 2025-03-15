@@ -39,11 +39,17 @@
   max-width: 10%;
 }
 
-/* Main body */
+/* Introduction */
 #selfie {
   max-width: 20%;
 }
 
 #desc {
   font-style: italic;
+}
+
+/* Projects */
+.projects {
+  height: fit-content;
+  background-color:#24bbd2;
 }
