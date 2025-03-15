@@ -1,23 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './navbar/navbar';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <img className='jeff' src='https://pbs.twimg.com/media/GYIvSpYbsAAwuMa.jpg' alt='jeff' />
+      <div className='Intro'>
+        <img id='selfie' src='https://i.ibb.co/7xqHrMW9/senior-photo-modified.png' alt='selfie' />
+        <h1>Welcome to my website (v2)!</h1>
+        <p id='desc'>My last one kept getting flagged for misleading content :/</p>
+      </div>
     </div>
   );
 }

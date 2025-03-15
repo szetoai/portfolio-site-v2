@@ -1,38 +1,51 @@
+/* Master */
 .App {
   text-align: center;
+  font-size: xx-large;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Jeff */
+.jeff {
+  animation-name: spin;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  max-width: 10%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
+@keyframes spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Main body */
+#selfie {
+  max-width: 20%;
+}
+
+h1 {
+  animation: riseText 0.4s linear 0s 1, fadeInText 0.75s ease-in 0s 1;
+}
+
+#desc {
+  font-style: italic;
+}
+
+@keyframes fadeInText {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes riseText {
+	0% {
+		transform: translateY(25px);
+	}
 }
