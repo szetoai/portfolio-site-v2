@@ -4,7 +4,7 @@ function Projects() {
     return (
         <ul>
             <li>
-                <img src="https://s8.ezgif.com/tmp/ezgif-848be86b38f34a.gif" alt="qbert"/>
+                <img src="https://i.ibb.co/NdKwQmY1/2025-03-1423-18-05-ezgif-com-video-to-gif-converter.gif" alt="qbert"/>
             </li>
         </ul>
     );
