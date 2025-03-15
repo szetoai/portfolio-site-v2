@@ -2,15 +2,23 @@
 .App {
   text-align: center;
   font-size: xx-large;
+  animation: fadeIn 0.6s ease-in 0s 1, rise 0.4s linear 0s 1;
 }
 
-/* Jeff */
-.jeff {
-  animation-name: spin;
-  animation-duration: 1s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  max-width: 10%;
+/* Animations */
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes rise {
+	0% {
+		transform: translateY(25px);
+	}
 }
 
 @keyframes spin {
@@ -22,30 +30,20 @@
   }
 }
 
+/* Jeff */
+.jeff {
+  animation-name: spin;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  max-width: 10%;
+}
+
 /* Main body */
 #selfie {
   max-width: 20%;
 }
 
-h1 {
-  animation: riseText 0.4s linear 0s 1, fadeInText 0.75s ease-in 0s 1;
-}
-
 #desc {
   font-style: italic;
-}
-
-@keyframes fadeInText {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
-}
-
-@keyframes riseText {
-	0% {
-		transform: translateY(25px);
-	}
 }

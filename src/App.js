@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <img className='jeff' src='https://pbs.twimg.com/media/GYIvSpYbsAAwuMa.jpg' alt='jeff' />
+      <img className='jeff' src='https://i.ibb.co/kV0rW4YK/jeff.png' alt='jeff' />
       <div className='Intro'>
         <img id='selfie' src='https://i.ibb.co/7xqHrMW9/senior-photo-modified.png' alt='selfie' />
         <h1>Welcome to my website (v2)!</h1>
