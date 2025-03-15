@@ -51,5 +51,10 @@
 /* Projects */
 .projects {
   height: fit-content;
-  background-color:#24bbd2;
+  background-repeat: no-repeat;
+  background-image: repeating-linear-gradient(to right, white, #24bbd2, #24bbd2, #24bbd2, white)
+}
+
+.sectionHead {
+  font-style: italic;
 }
