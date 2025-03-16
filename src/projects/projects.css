@@ -1,0 +1,17 @@
+#projectsList div {
+    display: inline-block;
+}
+
+.project {
+    border: 5px solid rgb(0, 0, 0);
+    background-color: rgb(97, 227, 219);
+    border-radius: 5px;
+}
+
+.projectImg {
+    max-width: 75%;
+}
+
+#projectImg2 {
+    width: 75%;
+}
