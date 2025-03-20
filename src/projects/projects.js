@@ -4,6 +4,7 @@ import "./projects.css";
 
 function Projects() {
     const [p1, setP1] = useState("project");
+    const [p2, setP2] = useState("project");
 
     return (
         <>
@@ -14,9 +15,9 @@ function Projects() {
                     <h2>MyQbert</h2>
                 </div>
                 <span />
-                <div className="project" id="project2">
+                <div className={p2} id="project2" onMouseOver={() => setP2("activeProject")} onMouseLeave={() => setP2("project")}>
                     <img className="projectImg" id="projectImg2" src="https://i.ibb.co/zVCTqfF0/face-recog.gif" alt="face recognition"/>
-                    <h2>AI Facial Recognition</h2>
+                    <h2>AI</h2>
                 </div>
             </div>
         </>
