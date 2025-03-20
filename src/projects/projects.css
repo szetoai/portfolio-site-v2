@@ -1,17 +1,44 @@
+/* Animations */
+@keyframes grow {
+    0% {
+        width: 25%;
+    }
+    100% {
+        width: 30%;
+    }
+}
+
+@keyframes shrink {
+    0% {
+        width: 30%;
+    }
+    100% {
+        width: 25%;
+    }
+}
+
 #projectsList div {
     display: inline-block;
 }
 
 .project {
     border: 5px solid rgb(0, 0, 0);
-    background-color: rgb(97, 227, 219);
     border-radius: 5px;
+    animation: shrink 0.5s;
+    width: 25%;
+}
+
+.activeProject {
+    border: 5px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    animation: grow 0.5s;
+    width: 30%;
 }
 
 .projectImg {
-    max-width: 75%;
+    max-height: 380px;
+    max-width: 380px;
 }
 
-#projectImg2 {
-    width: 75%;
+.activeProjectImg {
 }
