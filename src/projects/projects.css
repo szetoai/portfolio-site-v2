@@ -1,43 +1,85 @@
+:root {
+    --preferred-blue-semi-trans: #24bbd2dc;
+    --small: 25%;
+    --big: 40%;
+}
+
 /* Animations */
 @keyframes grow {
     0% {
-        width: 30%;
+        width: var(--small);
     }
     100% {
-        width: 35%;
+        width: var(--big);
     }
 }
 
 @keyframes shrink {
     0% {
-        width: 35%;
+        width: var(--big);
     }
     100% {
-        width: 30%;
+        width: var(--small);
     }
 }
 
+/* Makes the projects in a horizontal line */
 #projectsList div {
     display: inline-block;
 }
 
+/* States which a project box can be in */
 .project {
     border: 5px solid rgb(0, 0, 0);
     border-radius: 5px;
+    fill: black;
+}
+
+.projectOff {
     animation: shrink 0.5s;
-    width: 30%;
+    width: var(--small);
 }
 
-.activeProject {
-    border: 5px solid rgb(0, 0, 0);
-    border-radius: 5px;
+.projectOn {
     animation: grow 0.5s;
-    width: 35%;
+    width: var(--big);
 }
 
+/* Project items */
 .projectImg {
     max-height: 380px;
     max-width: 380px;
     margin-left: 50px;
     margin-right: 50px;
+}
+
+/* New overlay styles */
+.project-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--preferred-blue-semi-trans);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.overlay p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.project:hover .overlay {
+    opacity: 1;
 }

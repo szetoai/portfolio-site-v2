@@ -1,3 +1,7 @@
+:root {
+  --preferred-blue: #24bbd2;
+}
+
 /* Add a black background color to the top navigation */
 .topnav {
     background-color: #333;
@@ -21,12 +25,12 @@
   
   /* Change the color of links on hover */
   .topnav a:hover {
-    background-color: #24bbd2;
+    background-color: var(--preferred-blue);
     color: black;
   }
   
   /* Add a color to the active/current link */
   .topnav a.active {
-    background-color: #24bbd2;
+    background-color: var(--preferred-blue);
     color: white;
   }
