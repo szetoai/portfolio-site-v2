@@ -1,1 +1,1 @@
-Welcome to my portfolio site v2! Made using React.js.
+Deprecated - please see portfolio-site-v3
